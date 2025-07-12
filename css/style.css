@@ -1,0 +1,109 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #121212;
+  color: #eee;
+  scroll-behavior: smooth;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: #00e0ff;
+  text-shadow: 0 0 4px #00e0ff;
+}
+
+.navbar .nav-link {
+  color: #ddd;
+  transition: all 0.2s ease;
+}
+.navbar .nav-link:hover {
+  color: #00e0ff;
+}
+
+header img {
+  border: 3px solid #00e0ff;
+  box-shadow: 0 0 8px rgba(0, 224, 255, 0.4);
+}
+
+.list-group-item {
+  background-color: transparent;
+  color: #ccc;
+  border: none;
+  font-size: 1.1rem;
+}
+
+footer {
+  background: #000;
+  color: #777;
+}
+
+a.text-info:hover {
+  color: white !important;
+  transform: scale(1.1);
+  transition: 0.3s;
+}
+.footer-epico {
+  background: linear-gradient(135deg, #0d0d0d, #1a1a1a);
+  border-top: 1px solid #00e0ff33;
+  box-shadow: inset 0 4px 8px rgba(0, 224, 255, 0.1);
+}
+/* NAVBAR ÉPICA */
+.navbar-epica {
+  background: linear-gradient(to right, #0f0f0f, #1a1a1a);
+  border-bottom: 1px solid rgba(0, 224, 255, 0.2);
+  transition: background 0.3s ease;
+  z-index: 1050;
+}
+
+.navbar-epica .navbar-brand {
+  color: #00e0ff;
+  font-weight: bold;
+  text-shadow: 0 0 8px #00e0ff;
+  transition: transform 0.2s ease-in-out;
+}
+
+.navbar-epica .navbar-brand:hover {
+  transform: scale(1.05);
+}
+
+.glow {
+  animation: glowText 2s ease-in-out infinite alternate;
+}
+
+@keyframes glowText {
+  from {
+    text-shadow: 0 0 10px #00e0ff;
+  }
+  to {
+    text-shadow: 0 0 20px #00f7ff, 0 0 30px #00e0ff;
+  }
+}
+
+.navbar-epica .nav-link {
+  color: #ccc;
+  position: relative;
+  transition: all 0.3s;
+  font-weight: 500;
+}
+
+.navbar-epica .nav-link:hover,
+.navbar-epica .nav-link.active {
+  color: #00e0ff;
+  text-shadow: 0 0 5px #00e0ff;
+}
+
+.navbar-epica .nav-link::after {
+  content: "";
+  display: block;
+  width: 0%;
+  height: 2px;
+  background: #00e0ff;
+  transition: 0.4s;
+  margin-top: 4px;
+  border-radius: 2px;
+}
+
+.navbar-epica .nav-link:hover::after {
+  width: 100%;
+}
